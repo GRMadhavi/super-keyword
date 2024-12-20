@@ -1,0 +1,20 @@
+class A:
+    def __init__(self):
+        print('hi')
+class B(A):
+    def __init__(self,x):
+       super().__init__()
+       print('hello',x)
+class C(B):
+    def __init__(self):
+        super().__init__(10)
+        print('welcome')
+obj=C()
+
+
+
+excepted ouput
+hi
+hello 10
+welcome
+
